@@ -5,7 +5,7 @@ categories:
 - Post Formats
 tags:
 - Post Formats
-last_modified_at: 2017-03-23 19:33:37 +0000
+last_modified_at: 2017-03-23T19:33:37.000+00:00
 comments: false
 
 ---
