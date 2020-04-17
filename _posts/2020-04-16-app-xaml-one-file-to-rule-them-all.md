@@ -1,7 +1,10 @@
 ---
 layout: post
 title: App.xaml - One file to rule them all
-excerpt: ''
+excerpt: |-
+  **App.xaml** is your application main file and is automatically created. It define what your app will do when starded, suspended, onbackground, etc.
+
+  When created, the file look something like this
 date: 2020-04-16 03:00:00 +0000
 last_modified_at: 2020-04-16 03:00:00 +0000
 categories: []
