@@ -13,6 +13,15 @@ fields:
   hidden: false
   default: ''
   description: Add post title here
+- name: excerpt
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Excerpt
 - name: date
   label: Date
   type: datetime
