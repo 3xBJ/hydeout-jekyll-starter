@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "..Net"
+title: ".Net"
 category: ".Net"
 
 ---
