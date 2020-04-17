@@ -164,7 +164,7 @@ We just need to implement how we whant to handle the exception.
 
 {% endhighlight %}
 
-You could ask why we set \`e.Handled = true\` and would be a good question! If you look at the [documentation](https://docs.microsoft.com/en-us/dotnet/api/system.windows.application.dispatcherunhandledexception?view=netframework-4.8) you will`read that when a`unhandled exeption is throw the Windows Run Time will close the app unless that the exeption is setted as handle.
+You could ask why we set \`e.Handled = true\` and would be a good question! If you look at the [documentation](https://docs.microsoft.com/en-us/dotnet/api/system.windows.application.dispatcherunhandledexception?view=netframework-4.8) you will read that when a unhandled exceptionis throw the Windows Run Time will close the app unless that the exception is setted as handle.
 
 Be awere that some times we have no choice but let the WRT kill the aplication. We can decide that looking in the parameter; e.Exception will say if the exception was just a naive FileNotFoundException or an unrecovable StackOverflowException.
 
