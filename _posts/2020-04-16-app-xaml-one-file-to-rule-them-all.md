@@ -94,6 +94,8 @@ We can also get the resource via code-behind
 
     Brush whiteBrush = (Brush)Application.Current.Resources["MyWhite"];
 
+{% endhighlight %}
+
 or .xaml
 
 {% highlight c# %}
