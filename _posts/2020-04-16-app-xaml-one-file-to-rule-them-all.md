@@ -29,7 +29,7 @@ When created, the file look something like this
     	</Application.Resources>
         
        </Application>
-       
+
 {% endhighlight %}
 
 Let's explore the main features that we can use in this file.
@@ -101,7 +101,7 @@ or .xaml
 {% highlight c# %}
 
     <TextBlock Text="Biscoito" Foreground="{StaticResource MyWhite}"/>
-    
+
 {% endhighlight %}
 
 Resources are a good way to implement a theme for the app, 'cause if resources change, the resource system ensures that element properties which are bound to those resources are automatically updated to reflect the change.
@@ -164,8 +164,7 @@ We just need to implement how we whant to handle the exception.
 
 {% endhighlight %}
 
-You could ask why we set \`e.Handled = true\` and would be a good question! If you look at the [documentation](https://docs.microsoft.com/en-us/dotnet/api/system.windows.application.dispatcherunhandledexception?view=netframework-4.8) you will read that when a  
-unhandled exeption is throw the Windows Run Time will close the app unless that the exeption is setted as handle.
+You could ask why we set \`e.Handled = true\` and would be a good question! If you look at the [documentation](https://docs.microsoft.com/en-us/dotnet/api/system.windows.application.dispatcherunhandledexception?view=netframework-4.8) you will`read that when a`unhandled exeption is throw the Windows Run Time will close the app unless that the exeption is setted as handle.
 
 Be awere that some times we have no choice but let the WRT kill the aplication. We can decide that looking in the parameter; e.Exception will say if the exception was just a naive FileNotFoundException or an unrecovable StackOverflowException.
 
