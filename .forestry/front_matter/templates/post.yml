@@ -20,7 +20,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html
   label: Excerpt
 - name: date
   label: Date
