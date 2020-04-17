@@ -44,3 +44,5 @@ fields:
   label: Comments
   description: Active if you want to allow comments (this option is only available
     if you've set Disqus up in your Site Configuration)
+pages:
+- _posts/app-xaml-one-file-to-rule-them-all.md
