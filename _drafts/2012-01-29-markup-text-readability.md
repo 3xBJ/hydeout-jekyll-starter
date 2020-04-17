@@ -8,7 +8,7 @@ tags:
 - sample post
 - readability
 - test
-last_modified_at: 2012-01-29 17:26:59 +0000
+last_modified_at: 2012-01-29T17:26:59.000+00:00
 comments: false
 
 ---

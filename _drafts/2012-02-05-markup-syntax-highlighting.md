@@ -4,7 +4,7 @@ layout: post
 excerpt: Post displaying the various ways one can highlight code blocks with Jekyll.
   Some options include standard Markdown, GitHub Flavored Markdown, and Jekyll's `{%
   highlight %}` tag.
-last_modified_at: 2012-02-05 15:27:01 +0000
+last_modified_at: 2012-02-05T15:27:01.000+00:00
 tags:
 - code
 - syntax highlighting

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing Hyde
-date: 2013-12-27 23:00:00 +0000
+date: 2013-12-27T23:00:00.000+00:00
 comments: false
 
 ---
