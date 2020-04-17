@@ -40,6 +40,8 @@ Let's explore the main features that we can use in this file.
 
 The most important property of an application is StartupUri, this prop specify the UI that automatically opens when an application starts. So, if you do
 
+{% highlight c# %}
+
     Application x:Class="MySolution.App"
     	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -49,6 +51,8 @@ The most important property of an application is StartupUri, this prop specify t
                 
     	</Application.Resources>
     </Application>
+
+{% endhighlight %}
 
 _Biscoito.xaml_ will open when you run the app.
 
@@ -60,9 +64,15 @@ With this property we can set a collection of application-scope resources, such 
 
 We can set a Resource from code-behin
 
+{% highlight c# %}
+
     Application.Current.Resources["ApplicationScopeResource"] = Brushes.White;
 
+{% endhighlight %}
+
 Or throuth the .xaml
+
+{% highlight c# %}
 
     <Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -74,15 +84,23 @@ Or throuth the .xaml
     	</Application.Resources>
     </Application>
 
+{% endhighlight %}
+
 eitherway the solid brush will be avaible for all the assembly.
 
 We can also get the resource via code-behind
+
+{% highlight c# %}
 
     Brush whiteBrush = (Brush)Application.Current.Resources["MyWhite"];
 
 or .xaml
 
+{% highlight c# %}
+
     <TextBlock Text="Biscoito" Foreground="{StaticResource MyWhite}"/>
+    
+{% endhighlight %}
 
 Resources are a good way to implement a theme for the app, 'cause if resources change, the resource system ensures that element properties which are bound to those resources are automatically updated to reflect the change.
 
@@ -110,6 +128,8 @@ It's important to notice that if the exceptions are throw by a background UI thr
 
 So, once we subscribe to the event.
 
+{% highlight c# %}
+
     <Application x:Class="WpfTutorialSamples.App"
     	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -122,7 +142,11 @@ So, once we subscribe to the event.
     	
     </Application>
 
+{% endhighlight %}
+
 We just need to implement how we whant to handle the exception.
+
+{% highlight c# %}
 
     namespace MySolution 
     {
@@ -135,6 +159,8 @@ We just need to implement how we whant to handle the exception.
     		}
     	}
     }
+
+{% endhighlight %}
 
 You could ask why we set \`e.Handled = true\` and would be a good question! If you look at the [documentation](https://docs.microsoft.com/en-us/dotnet/api/system.windows.application.dispatcherunhandledexception?view=netframework-4.8) you will read that when a  
 unhandled exeption is throw the Windows Run Time will close the app unless that the exeption is setted as handle.
