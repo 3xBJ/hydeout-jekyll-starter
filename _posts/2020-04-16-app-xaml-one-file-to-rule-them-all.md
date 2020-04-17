@@ -4,10 +4,7 @@ title: App.xaml - One file to rule them all
 excerpt: ''
 date: 2020-04-16 03:00:00 +0000
 last_modified_at: 2020-04-16 03:00:00 +0000
-categories:
-- ".Net"
-- WPF
-- XAML
+categories: []
 tags: []
 comments: false
 
