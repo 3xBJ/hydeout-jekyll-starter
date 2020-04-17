@@ -17,6 +17,8 @@ comments: false
 
 When created, the file look something like this
 
+{% highlight c# %}
+
     <Application x:Class="MySolution.App"
     	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -27,6 +29,8 @@ When created, the file look something like this
     	</Application.Resources>
         
        </Application>
+       
+{% endhighlight %}
 
 Let's explore the main features that we can use in this file.
 
