@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Example content
-date: 2012-02-06 23:00:00 +0000
+date: 2012-02-06T23:00:00.000+00:00
 comments: false
 
 ---
