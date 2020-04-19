@@ -13,15 +13,13 @@ tags:
 comments: false
 
 ---
-Chapter
+### Chapter 0 - Class declaration
 
-dsadas
+We are already familiar with c# class declaration.
 
     public class Converter{   }
 
-dsadsa
-
-That's code translates in
+Now, let's take a look at how this same declaration looks like in IL:
 
     .class private auto ansi '<Module>'
     {
@@ -52,6 +50,18 @@ There is this class called <module> and after that we have our Converter class d
 So now let's look at the documentation and try to make sense of all this atributes and wtf is this <Module> thing.
 
 #### <Module>
+
+#### Type layout attributes
+
+#### Interoperation attributes
+
+When dealing with .dll from another language, a call by another thread - or any interoperation in the unmenaged realm - we need to serialize our data structure to send as a message to whoever is calling. This serialization process is called **marshalling**. 
+
+These attributes specify the default behavior to be used when calling a method  on the class, that has an argument or return type of System.String and does not itself specify marshalling behavior.
+
+* **ansi** specifies that marshalling shall be to and from ANSI strings. 
+* **autochar** specifies marshalling behavior (either ANSI or Unicode), depending on the platform on which the CLI is running. 
+* **unicode** specifies that marshalling shall be to and from Unicode strings.
 
 #### Special handling attributes
 
