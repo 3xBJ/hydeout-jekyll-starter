@@ -1,12 +1,15 @@
 ---
 layout: post
-title: Fun with IL - Chapter 0 - Class declaration
+title: 'Fun with IL: Chapter 0 - Class declaration'
 excerpt: Let's start our journey declaring a class and looking at the generated IL
   code
 date: 2020-04-18 03:00:00 +0000
 last_modified_at: 2020-04-18 03:00:00 +0000
 categories: []
-tags: []
+tags:
+- IL
+- C#
+- CLR
 comments: false
 
 ---
@@ -52,13 +55,17 @@ So now let's look at the documentation and try to make sense of all this atribut
 
 #### Special handling attributes
 
-These attributes can be combined in any way.
+The documentation states
 
-* **beforefieldinit** instructs the CLI that it need not initialize the type before a static method is called.
-* **rtspecialname** indicates that the name of this item has special significance to the CLI. There are no currently defined special type names; this is for future use. Any item marked rtspecialname shall also be marked specialname.
-* **serializable** Reserved for future use, to indicate that the fields of the type are to be serialized into a data stream (should such support be provided by the implementation).
-* **specialname** indicates that the name of this item can have special significance to tools other than the CLI.
+> These attributes can be combined in any way.
+>
+> * **beforefieldinit** instructs the CLI that it need not initialize the type before a static method is called.
+> * **rtspecialname** indicates that the name of this item has special significance to the CLI. There are no currently defined special type names; this is for future use. Any item marked rtspecialname shall also be marked specialname.
+> * **serializable** Reserved for future use, to indicate that the fields of the type are to be serialized into a data stream (should such support be provided by the implementation).
+> * **specialname** indicates that the name of this item can have special significance to tools other than the CLI.
 
-serializable is a well-know friend of c# developers. Probably it apears when we try
+**beforefieldinit** is always true?????????
 
-_rtspecialname_ and _specialname_ has to do with CLI's concepts and architecture,so we'll not to go into details about it now. The documentation tell us that it's for future use but the documentation is from 2012! So there is a chance that this must be already in use (2020). Maybe in the future we are going to make one chapter about this two.
+**_serializable_** is a well-know friend of c# developers. It apears when we add the serializeble attribute to our class.
+
+The documentation tell us that **_rtspecialname_** and **_specialname_** for future use, but the documentation is from 2012! So there is a chance that this must be already in use today (2020). Maybe in the future we are going to talk more about this two.
