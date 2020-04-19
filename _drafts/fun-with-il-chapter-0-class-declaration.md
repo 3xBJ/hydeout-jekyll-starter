@@ -21,7 +21,7 @@ dsadas
 
 dsadsa
 
-That's code translate in
+That's code translates in
 
     .class private auto ansi '<Module>'
     {
