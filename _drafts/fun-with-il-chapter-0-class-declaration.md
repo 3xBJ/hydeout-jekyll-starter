@@ -80,6 +80,28 @@ The documentation states
 
 The documentation tell us that **_rtspecialname_** and **_specialname_** for future use, but the documentation is from 2012! So there is a chance that this must be already in use today (2020). Maybe in the future we are going to talk more about this two.
 
+#### Inehrence 
+
+To specify inehrence we just need to use extends. As all c# types inheret from System.Object our class couldn't be different.
+
+#### Static Class
+
+dasds
+
+    .class private auto ansi '<Module>'
+    {
+    } // end of class <Module>
+    
+    .class public auto ansi abstract sealed beforefieldinit Converter
+        extends [System.Private.CoreLib]System.Object
+    {
+    } // end of class Converter
+    
+
+dasdsa
+
+#### Abstract Class
+
 #### That's all folks
 
 Next time we are going to look at the constructor declaration.
