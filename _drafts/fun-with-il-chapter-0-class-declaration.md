@@ -84,6 +84,8 @@ The documentation tell us that **_rtspecialname_** and **_specialname_** for fut
 
 To specify inehrence we just need to use extends. As all c# types inheret from System.Object our class couldn't be different.
 
+#### Abstract Class
+
 #### Static Class
 
 dasds
@@ -99,8 +101,6 @@ dasds
     
 
 dasdsa
-
-#### Abstract Class
 
 #### That's all folks
 
