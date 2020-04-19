@@ -79,3 +79,7 @@ The documentation states
 **_serializable_** is a well-know friend of c# developers. It apears when we add the serializeble attribute to our class.
 
 The documentation tell us that **_rtspecialname_** and **_specialname_** for future use, but the documentation is from 2012! So there is a chance that this must be already in use today (2020). Maybe in the future we are going to talk more about this two.
+
+#### That's all folks
+
+Next time we are going to look at the constructor declaration.
