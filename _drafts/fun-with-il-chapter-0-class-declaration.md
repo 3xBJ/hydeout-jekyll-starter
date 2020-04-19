@@ -18,7 +18,7 @@ dsadas
 
 dsadsa
 
-That's code translate in 
+That's code translate in
 
     .class private auto ansi '<Module>'
     {
@@ -41,14 +41,15 @@ That's code translate in
         } // end of method Converter::.ctor
     
     } // end of class Converter
-    
 
-Yeah, a little overwhelming, but just a little.  
+Yeah, a little overwhelming, but just a little.
 
-There is this class called <module> and after that we have our Converter class declaration. Despite we never declared a method we can find one in the IL code - that must be our default constructor. Good! We can undestand a lot of IL code from the start! 
+There is this class called <module> and after that we have our Converter class declaration. Despite we never declared a method we can find one in the IL code - that must be our default constructor. Good! We can undestand a lot of IL code from the start!
 
 So now let's look at the documentation and try to make sense of all this atributes and wtf is this <Module> thing.
 
 #### <Module>
 
 #### Special handling attributes
+
+These attributes can be combined in any way.
