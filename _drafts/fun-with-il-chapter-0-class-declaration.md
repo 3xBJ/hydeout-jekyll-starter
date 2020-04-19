@@ -55,7 +55,9 @@ So now let's look at the documentation and try to make sense of all this atribut
 
 The type layout specifies how the fields of an instance of a type are arranged.
 
-auto: The layout shall be done by the CLI, with no user-supplied constraints. explicit: The layout of the fields is explicitly provided (§II.10.7). However, a generic type shall not have explicit layout. sequential: The CLI shall lay out the fields in sequential order, based on the order of the fields in the logical metadata table (§II.22.15).
+* auto: The layout shall be done by the CLI, with no user-supplied constraints.
+* explicit: The layout of the fields is explicitly provided (§II.10.7). However, a generic type shall not have explicit layout. 
+* sequential: The CLI shall lay out the fields in sequential order, based on the order of the fields in the logical metadata table (§II.22.15).
 
 #### Interoperation attributes
 
