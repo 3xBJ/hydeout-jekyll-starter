@@ -45,7 +45,7 @@ Now, let's take a look at how this same declaration looks like in IL:
 
 Yeah, a little overwhelming, but just a little.
 
-There is this class called <module> and after that we have our Converter class declaration. Despite we never declared a method we can find one in the IL code - that must be our default constructor. Good! We can undestand a lot of IL code from the start!
+There is this class called <module> and after that we have our Converter class declaration. Despite we never declared a method, we can find one in the IL code - that must be our default constructor. Good! It's not hard to grasp what the IL code is doing!
 
 So now let's look at the documentation and try to make sense of all this atributes and wtf is this <Module> class.
 
