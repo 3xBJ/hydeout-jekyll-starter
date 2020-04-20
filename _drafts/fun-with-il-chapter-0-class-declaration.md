@@ -15,7 +15,7 @@ comments: false
 ---
 ### Chapter 0 - Class declaration
 
-We are already familiar with c# class declaration.
+We are already familiar with C# class declaration:
 
     public class Converter{   }
 
@@ -53,20 +53,29 @@ So now let's look at the documentation and try to make sense of all this atribut
 
 #### Type layout attributes
 
-The type layout specifies how the fields of an instance of a type are arranged.
+The documentation tell us
 
-* auto: The layout shall be done by the CLI, with no user-supplied constraints.
-* explicit: The layout of the fields is explicitly provided (§II.10.7). However, a generic type shall not have explicit layout. 
-* sequential: The CLI shall lay out the fields in sequential order, based on the order of the fields in the logical metadata table (§II.22.15).
+> The type layout specifies how the fields of an instance of a type are arranged.
+
+But what thats means? And why one should care about that?
+
+* **auto**: The layout shall be done by the CLI, with no user-supplied constraints.
+* **explicit**: The layout of the fields is explicitly provided (this layout is = c/c++ layout). However, a generic type shall not have explicit layout.
+* **sequential**: The CLI shall lay out the fields in sequential order, based on the order of the fields in the logical metadata table.
+
+We can also set this property in c# class declaration
+
+    [StructLayout(LayoutKind.Explicit, Size=16, CharSet=CharSet.Ansi)]
+    public class Converter{   }
 
 #### Interoperation attributes
 
-When dealing with .dll from another language, a call by another thread - or any interoperation in the unmenaged realm - we need to serialize our data structure to send as a message to whoever is calling. This serialization process is called **marshalling**. 
+When dealing with .dll from another language, a call by another thread - or any interoperation in the unmenaged realm - we need to serialize our data structure to send as a message to whoever is calling. This serialization process is called **marshalling**.
 
 These attributes specify the default behavior to be used when calling a method  on the class, that has an argument or return type of System.String and does not itself specify marshalling behavior.
 
-* **ansi** specifies that marshalling shall be to and from ANSI strings. 
-* **autochar** specifies marshalling behavior (either ANSI or Unicode), depending on the platform on which the CLI is running. 
+* **ansi** specifies that marshalling shall be to and from ANSI strings.
+* **autochar** specifies marshalling behavior (either ANSI or Unicode), depending on the platform on which the CLI is running.
 * **unicode** specifies that marshalling shall be to and from Unicode strings.
 
 #### Special handling attributes
@@ -86,11 +95,18 @@ The documentation states
 
 The documentation tell us that **_rtspecialname_** and **_specialname_** for future use, but the documentation is from 2012! So there is a chance that this must be already in use today (2020). Maybe in the future we are going to talk more about this two.
 
-#### Inehrence 
+#### Inehrence
 
 To specify inehrence we just need to use extends. As all c# types inheret from System.Object our class couldn't be different.
 
-#### Abstract Class
+#### Inheritance attributes
+
+These attributes can be used together.
+
+* **abstract** specifies that this type shall not be instantiated.
+* **sealed** specifies that a type shall not have derived classes.
+
+A type that is both abstract and sealed should have only static members, and serves as what some languages call a “namespace” or “static class”
 
 #### Static Class
 
@@ -104,7 +120,6 @@ dasds
         extends [System.Private.CoreLib]System.Object
     {
     } // end of class Converter
-    
 
 dasdsa
 
