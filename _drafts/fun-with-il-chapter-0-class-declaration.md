@@ -17,7 +17,7 @@ comments: false
 
 We are already familiar with C# class declaration:
 
-    public class Converter{   }
+    public class Converter {}
 
 Now, let's take a look at how this same declaration looks like in IL:
 
@@ -59,14 +59,14 @@ The documentation tell us
 
 But what thats means? And why one should care about that?
 
-* **auto**: The layout shall be done by the CLI, with no user-supplied constraints.
-* **explicit**: The layout of the fields is explicitly provided (this layout is = c/c++ layout). However, a generic type shall not have explicit layout.
+* **auto**: The layout shall be done by the CLI, with no user-supplied constraints;
+* **explicit**: The layout of the fields is explicitly provided;
 * **sequential**: The CLI shall lay out the fields in sequential order, based on the order of the fields in the logical metadata table.
 
 We can also set this property in c# class declaration
 
     [StructLayout(LayoutKind.Explicit, Size=16, CharSet=CharSet.Ansi)]
-    public class Converter{   }
+    public class Converter {}
 
 #### Interoperation attributes
 
@@ -84,9 +84,9 @@ The documentation states
 
 > These attributes can be combined in any way.
 >
-> * **beforefieldinit** instructs the CLI that it need not initialize the type before a static method is called.
-> * **rtspecialname** indicates that the name of this item has special significance to the CLI. There are no currently defined special type names; this is for future use. Any item marked rtspecialname shall also be marked specialname.
-> * **serializable** Reserved for future use, to indicate that the fields of the type are to be serialized into a data stream (should such support be provided by the implementation).
+> * **beforefieldinit** instructs the CLI that it need not initialize the type before a static method is called;
+> * **rtspecialname** indicates that the name of this item has special significance to the CLI. There are no currently defined special type names; this is for future use. Any item marked rtspecialname shall also be marked specialname;
+> * **serializable** Reserved for future use, to indicate that the fields of the type are to be serialized into a data stream (should such support be provided by the implementation);
 > * **specialname** indicates that the name of this item can have special significance to tools other than the CLI.
 
 **beforefieldinit** is always true?????????
@@ -103,7 +103,7 @@ To specify inehrence we just need to use extends. As all c# types inheret from S
 
 These attributes can be used together.
 
-* **abstract** specifies that this type shall not be instantiated.
+* **abstract** specifies that this type shall not be instantiated;
 * **sealed** specifies that a type shall not have derived classes.
 
 A type that is both abstract and sealed should have only static members, and serves as what some languages call a “namespace” or “static class”
