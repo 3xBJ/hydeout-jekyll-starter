@@ -63,10 +63,10 @@ But what thats means? And why one should care about that?
 * **explicit**: The layout of the fields is explicitly provided;
 * **sequential**: The CLI shall lay out the fields in sequential order, based on the order of the fields in the logical metadata table.
 
-We can also set this property in c# class declaration
+We can also set this property when declaring a C# class
 
     [StructLayout(LayoutKind.Explicit, Size=16, CharSet=CharSet.Ansi)]
-    public class Converter {}
+    
 
 #### Interoperation attributes
 
@@ -89,9 +89,12 @@ The documentation states
 > * **serializable** Reserved for future use, to indicate that the fields of the type are to be serialized into a data stream (should such support be provided by the implementation);
 > * **specialname** indicates that the name of this item can have special significance to tools other than the CLI.
 
-**beforefieldinit** is always true?????????
+If **beforefieldinit** confuses you (as confused me) look at John seek's anwser on [stackoverflow ](https://stackoverflow.com/questions/610818/what-does-beforefieldinit-flag-do "What does beforefieldinit flag do?"), his [article](https://csharpindepth.com/Articles/BeforeFieldInit "C# and beforefieldinit") and his commnets on [C#4 changes](https://codeblog.jonskeet.uk/2010/01/26/type-initialization-changes-in-net-4-0/ "TYPE INITIALIZATION CHANGES IN .NET 4.0").
 
 **_serializable_** is a well-know friend of c# developers. It apears when we add the serializeble attribute to our class.
+
+    [Serializable]
+    public class Converter {}
 
 The documentation tell us that **_rtspecialname_** and **_specialname_** for future use, but the documentation is from 2012! So there is a chance that this must be already in use today (2020). Maybe in the future we are going to talk more about this two.
 
