@@ -17,9 +17,15 @@ comments: false
 
 We are already familiar with C# class declaration:
 
+{% highlight c# %}
+
     public class Converter {}
 
+{% endhighlight %}
+
 Now, let's take a look at how this same declaration looks like in IL:
+
+{% highlight c# %}
 
     .class private auto ansi '<Module>'
     {
@@ -43,6 +49,8 @@ Now, let's take a look at how this same declaration looks like in IL:
     
     } // end of class Converter
 
+{% endhighlight %}
+
 Yeah, a little overwhelming, but just a little.
 
 There is this class called <module> and after that we have our Converter class declaration. Despite we never declared a method, we can find one in the IL code - that must be our default constructor. Good! It's not hard to grasp what the IL code is doing!
@@ -65,8 +73,12 @@ But what thats means? And why one should care about that?
 
 We can also set this property when declaring a C# class
 
+{% highlight c# %}
+
     [StructLayout(LayoutKind.Explicit, Size=16, CharSet=CharSet.Ansi)]
     public class Converter {}
+
+{% endhighlight %}
 
 #### Interoperation attributes
 
@@ -93,8 +105,12 @@ If **beforefieldinit** confuses you (as confused me) look at John seek's anwser 
 
 **_serializable_** is a well-know friend of c# developers. It apears when we add the serializeble attribute to our class.
 
+{% highlight c# %}
+
     [Serializable]
     public class Converter {}
+
+{% endhighlight %}
 
 The documentation tell us that **_rtspecialname_** and **_specialname_** for future use, but the documentation is from 2012! So there is a chance that this must be already in use today (2020). Maybe in the future we are going to talk more about this two.
 
@@ -113,7 +129,7 @@ A type that is both abstract and sealed should have only static members, and ser
 
 #### Static Class
 
-dasds
+{% highlight c# %}
 
     .class private auto ansi '<Module>'
     {
@@ -124,7 +140,7 @@ dasds
     {
     } // end of class Converter
 
-dasdsa
+{% endhighlight %}
 
 #### That's all folks
 
