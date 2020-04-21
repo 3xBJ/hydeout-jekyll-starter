@@ -66,7 +66,7 @@ But what thats means? And why one should care about that?
 We can also set this property when declaring a C# class
 
     [StructLayout(LayoutKind.Explicit, Size=16, CharSet=CharSet.Ansi)]
-    
+    public class Converter {}
 
 #### Interoperation attributes
 
@@ -89,7 +89,7 @@ The documentation states
 > * **serializable** Reserved for future use, to indicate that the fields of the type are to be serialized into a data stream (should such support be provided by the implementation);
 > * **specialname** indicates that the name of this item can have special significance to tools other than the CLI.
 
-If **beforefieldinit** confuses you (as confused me) look at John seek's anwser on [stackoverflow ](https://stackoverflow.com/questions/610818/what-does-beforefieldinit-flag-do "What does beforefieldinit flag do?"), his [article](https://csharpindepth.com/Articles/BeforeFieldInit "C# and beforefieldinit") and his commnets on [C#4 changes](https://codeblog.jonskeet.uk/2010/01/26/type-initialization-changes-in-net-4-0/ "TYPE INITIALIZATION CHANGES IN .NET 4.0").
+If **beforefieldinit** confuses you (as confused me) look at John seek's anwser on [stackoverflow ](https://stackoverflow.com/questions/610818/what-does-beforefieldinit-flag-do "What does beforefieldinit flag do?"), his [article](https://csharpindepth.com/Articles/BeforeFieldInit "C# and beforefieldinit") and his commnets on [C#4 changes](https://codeblog.jonskeet.uk/2010/01/26/type-initialization-changes-in-net-4-0/ "TYPE INITIALIZATION CHANGES IN .NET 4.0")
 
 **_serializable_** is a well-know friend of c# developers. It apears when we add the serializeble attribute to our class.
 
