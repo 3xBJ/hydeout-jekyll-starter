@@ -47,5 +47,4 @@ fields:
     if you've set Disqus up in your Site Configuration)
 pages:
 - _posts/2020-04-18-fun-with-il-chapter-0-class-declaration.md
-- _posts/app-xaml-one-file-to-rule-them-all.md
 - fun-with-il-the-series.md
