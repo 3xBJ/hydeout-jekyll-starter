@@ -22,5 +22,6 @@ fields:
   config:
     required: false
 pages:
+- category/linux.md
 - category/net.md
 - category/wpf-xaml.md
