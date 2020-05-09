@@ -57,7 +57,7 @@ There is this class called <module> and after that we have our Converter class d
 
 So now let's look at the documentation and try to make sense of all this atributes and wtf is this <Module> class.
 
-#### <Module>
+####  Module
 
 It's a way to create _global variables._ I didn't find any detailed explanation about it :'(
 
