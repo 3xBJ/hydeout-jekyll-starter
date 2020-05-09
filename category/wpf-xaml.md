@@ -2,7 +2,6 @@
 layout: category
 title: WPF/XAML
 category: WPF/XAML
-published: false
 
 ---
 
