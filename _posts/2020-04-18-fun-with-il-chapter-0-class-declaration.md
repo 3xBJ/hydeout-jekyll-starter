@@ -13,8 +13,6 @@ tags:
 comments: false
 
 ---
-### Chapter 0 - Class declaration
-
 Let's start our journey declaring a class and looking at the generated IL code.
 
 We are already familiar with C# class declaration:
