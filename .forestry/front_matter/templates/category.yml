@@ -22,6 +22,5 @@ fields:
   config:
     required: false
 pages:
-- category/c.md
 - category/net.md
 - category/wpf.md
