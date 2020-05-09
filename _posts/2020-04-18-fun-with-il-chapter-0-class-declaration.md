@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'Fun with IL: Chapter 0 - Class declaration'
-excerpt: Let's start our journey declaring a class and looking at the generated IL
-  code
+excerpt: 'Let''s start our journey declaring a class and looking at the generated
+  IL code<br><br>We are already familiar with C# class declaration:'
 date: 2020-04-18 03:00:00 +0000
 last_modified_at: 2020-04-18 03:00:00 +0000
 categories: []
@@ -14,6 +14,8 @@ comments: false
 
 ---
 ### Chapter 0 - Class declaration
+
+Let's start our journey declaring a class and looking at the generated IL code.
 
 We are already familiar with C# class declaration:
 
@@ -58,6 +60,8 @@ There is this class called <module> and after that we have our Converter class d
 So now let's look at the documentation and try to make sense of all this atributes and wtf is this <Module> class.
 
 #### <Module>
+
+It's a way to create _global variables._ I didn't find any detailed explanation about it :'(
 
 #### Type layout attributes
 
