@@ -1,12 +1,12 @@
 ---
 title: Luiz Sena
-tagline:
+tagline: ''
 description: Zwischen Immer und Nie
 url: sena.codes
-baseurl:
+baseurl: ''
 author:
   name: Luiz Sena
-  url:
+  url: ''
 paginate: 5
 exclude:
 - README.md
@@ -23,7 +23,9 @@ theme_colors:
 sidebar-sticky: true
 layout-reverse: false
 remote_theme: fongandrew/hydeout
-google_analytics: ''
+google_analytics: UA-67154592-2
 disqus:
   shortname: ''
 theme: jekyll-theme-hydeout
+markdown: ''
+highlighter: ''
