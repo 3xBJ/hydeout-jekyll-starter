@@ -23,4 +23,3 @@ fields:
     required: false
 pages:
 - category/net.md
-- category/wpf.md
