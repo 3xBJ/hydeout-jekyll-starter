@@ -11,7 +11,6 @@ tags:
 - C#
 - IL
 comments: false
-published: false
 
 ---
 ### Fun with IL
@@ -26,4 +25,4 @@ PS: To compile c# code to IL I'm using roselyn branch from [10 Mar 2020](https:/
 
 #### The Series
 
-Chapter 0 - Class declaration
+[Chapter 0 - Class declaration](https://sena.codes/2020/04/18/fun-with-il-chapter-0-class-declaration.html "Class Deraclaration")
