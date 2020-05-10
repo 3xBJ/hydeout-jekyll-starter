@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Events: or how i stopped worrying and love the CLR'
+title: 'Delegates: or how i stopped worrying and love the CLR'
 excerpt: ''
 date: 
 last_modified_at: 
@@ -9,6 +9,18 @@ tags: []
 comments: false
 
 ---
-Event are a way to implement observer pattern in our C# code. They are largely used in WPF, but can be usefull outside the UI realm.
+On the surface, delegates seem easy to use: 
 
-Supose we whant to develop an application that 
+* define one
+* pass a function to them
+* when whanted call them. 
+
+However, what's going on is a bit more complex than that - the complexity must leve in somewhere. As we will see, the compiler and the CLR do the hard work for us.
+
+Understanding how the compiler and the CLR deal with delegates is a good wya to learn how to use them efficiently and effectively.
+
+Using SharpLab we can see that, this one line of code
+
+![](assets/img/Chp2delegateDeclaration.png)
+
+Turn into the following IL code
