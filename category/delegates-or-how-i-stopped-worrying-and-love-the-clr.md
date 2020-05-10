@@ -24,3 +24,5 @@ So here we are going to see how stop worrying and love the CLR
 * Chapter 3: Chaining invakation
 * Chapter 4: Generic Delegates
 * Chapter 5: Delegates and reflection
+
+A lot of things here are extracted from CLR via C#, a great book. The other parts are from random seach on the internet and msdn documentation.
