@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Chapter 2: How the compiler deal withs delegates'
+title: How the compiler deal withs delegates
 excerpt: ''
 date: 
 last_modified_at: 
