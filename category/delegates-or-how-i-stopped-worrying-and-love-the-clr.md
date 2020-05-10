@@ -10,7 +10,9 @@ comments: false
 published: false
 
 ---
-Delegates are a cool feature of the C# language, more than learn about them we need to understand them to use them in the best way possible and whithout worries.
+Delegates are a cool feature of the C# language, more than learn about  we need to understand, to use them in the best way possible and whithout worries.
+
+In a first glance delegates seems simple, however - the complexity must leve in somewhere. As we will see, the compiler and the CLR do the hard work for us.
 
 So here we are going to see how stop worrying and love the CLR
 
