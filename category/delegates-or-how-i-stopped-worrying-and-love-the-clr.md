@@ -21,7 +21,7 @@ So here we are going to see how stop worrying and love the CLR
 * Chapter 0: How to use
 * Chapter 1: Variance and covariance
 * Chapter 2: How the compiler deal withs delegates
-* Chapter 3: Chaining invakation
+* Chapter 3: Chaining invokation
 * Chapter 4: Generic Delegates
 * Chapter 5: Delegates and reflection
 
