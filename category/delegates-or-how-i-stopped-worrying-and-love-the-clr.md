@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Delegates: or how i stopped worrying and love the CLR'
+title: Delegates:or how i stopped worrying and love the CLR
 excerpt: ''
 date: 
 last_modified_at: 
