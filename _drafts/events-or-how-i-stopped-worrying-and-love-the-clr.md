@@ -17,7 +17,7 @@ With [SharpLab](https://sharplab.io/#v2:EYLgtghgzgLgpgJwDQxASwDYB8ACBmAAhwCYCBZA
 
 ![](assets/img/chp2ILdelegateDeclaration.png)
 
-Yeah, a lot of code right? The important thing here is that the compiler create 4 objects for us.
+Yeah, a lot of code, right? The important thing here is that the compiler create 4 objects for us.
 
 * MyDelegate(Object @object, IntPtr method)
 * Invoke(int value)
@@ -29,3 +29,19 @@ BeginInvoke and EndInvoke are legacy code from the _.Net Framework Asynchronous 
 #### Constructor
 
 One curious thing is that our constructor derivate from _System.MulticastDelegate_, and if we look around we'll find out that there is a _System.Delegate_ class. There are two classes for historical reasons and unfortunely, besides every delegate has as a base class _MulticastDelegate_, when manipulating delegates we are going to use methods defined by the _Delegate_ class.
+
+There are 3 significant non-public fields that our class inherits from MulticastDelegate.
+
+##### Object _target
+
+##### IntPtr _methodPtr
+
+##### Object _invocationList
+
+##### Runtime Menaged
+
+if we take a look at the IL code generated we'll see that, after each one of the
+
+this is a ECMA CLI spipulation. 
+
+#### Invoke
