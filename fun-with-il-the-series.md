@@ -3,8 +3,8 @@ layout: post
 title: Fun with IL - The Series
 excerpt: Let's start our journey declaring a class and looking at the generated IL
   code
-date: 2020-04-18 03:00:00 +0000
-last_modified_at: 2020-04-18 03:00:00 +0000
+date: 2020-04-18T03:00:00.000+00:00
+last_modified_at: 2020-04-18T03:00:00.000+00:00
 categories: []
 tags:
 - Series
@@ -25,4 +25,4 @@ PS: To compile c# code to IL I'm using roselyn branch from [10 Mar 2020](https:/
 
 #### The Series
 
-[Chapter 0 - Class declaration](https://sena.codes/2020/04/18/fun-with-il-chapter-0-class-declaration.html "Class Deraclaration")
+[Class declaration](https://sena.codes/2020/04/18/fun-with-il-chapter-0-class-declaration.html "Class Deraclaration")
