@@ -3,8 +3,8 @@ layout: post
 title: 'Fun with IL: Chapter 0 - Class declaration'
 excerpt: 'Let''s start our journey declaring a class and looking at the generated
   IL code<br><br>We are already familiar with C# class declaration:'
-date: 2020-04-18 03:00:00 +0000
-last_modified_at: 2020-04-18 03:00:00 +0000
+date: 2020-04-18T03:00:00.000+00:00
+last_modified_at: 2020-04-18T03:00:00.000+00:00
 categories: []
 tags:
 - IL
@@ -143,7 +143,3 @@ A type that is both abstract and sealed should have only static members, and ser
     } // end of class Converter
 
 {% endhighlight %}
-
-#### That's all folks
-
-Next time we are going to look at the constructor declaration.
