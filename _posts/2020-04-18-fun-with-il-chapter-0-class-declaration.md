@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Fun with IL: Chapter 0 - Class declaration'
+title: 'Fun with IL: Class declaration'
 excerpt: 'Let''s start our journey declaring a class and looking at the generated
   IL code<br><br>We are already familiar with C# class declaration:'
 date: 2020-04-18T03:00:00.000+00:00
